@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="proxy-app">
     <v-app-bar flat class="proxy-header">
       <v-container class="d-flex align-center justify-space-between">
         <div class="logo-section">
@@ -17,18 +17,10 @@
     </v-app-bar>
 
     <v-main class="proxy-main">
-      <v-container fluid class="fill-height">
+      <v-container fluid class="main-container">
         <router-view />
       </v-container>
     </v-main>
-
-    <v-footer class="proxy-footer" app>
-      <v-container class="text-center">
-        <div class="footer-text">
-          © 2026 Proxy Service
-        </div>
-      </v-container>
-    </v-footer>
   </v-app>
 </template>
 
@@ -50,12 +42,28 @@ const logout = () => {
 
 * {
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.proxy-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .proxy-header {
   background: linear-gradient(135deg, #0a2e1a 0%, #064e2b 50%, #0a5c30 100%) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 }
 
 .logo-section {
@@ -96,19 +104,13 @@ const logout = () => {
 }
 
 .proxy-main {
+  flex: 1 0 auto;
   background: linear-gradient(135deg, #f5f7fa 0%, #e8edf2 100%);
-  min-height: calc(100vh - 64px - 64px);
 }
 
-.proxy-footer {
-  background: linear-gradient(135deg, #0a2e1a 0%, #064e2b 100%);
-  color: rgba(255, 255, 255, 0.7);
-  padding: 16px 0;
+.main-container {
+  min-height: 100%;
+  padding: 24px;
 }
 
-.footer-text {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
-  letter-spacing: 1px;
-}
 </style>

@@ -1,0 +1,267 @@
+# ====================
+# Python
+# ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+venv/
+.env/
+.env.local
+.env.*.local
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+*.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# ====================
+# Backend specific
+# ====================
+backend/.env
+backend/.env.local
+backend/.env.*.local
+backend/migrations/versions/*.py
+!backend/migrations/versions/__init__.py
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+backend/test.db
+backend/celerybeat-schedule
+backend/celerybeat.pid
+
+# ====================
+# Frontend / Node
+# ====================
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+frontend/*.local
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# Logs
+frontend/logs/
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+
+# Editor directories and files
+frontend/.vscode/*
+!frontend/.vscode/extensions.json
+frontend/.idea
+frontend/.DS_Store
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
+
+# ====================
+# Desktop app (Tauri)
+# ====================
+desktop-app/node_modules/
+desktop-app/dist/
+desktop-app/dist-ssr/
+desktop-app/.vite/
+desktop-app/*.local
+
+# Tauri specific
+desktop-app/src-tauri/target/
+desktop-app/src-tauri/gen/
+desktop-app/src-tauri/*.rs.bk
+desktop-app/src-tauri/*.pdb
+desktop-app/src-tauri/*.dSYM
+desktop-app/src-tauri/*.exe
+
+# Logs
+desktop-app/logs/
+desktop-app/*.log
+desktop-app/npm-debug.log*
+desktop-app/yarn-debug.log*
+desktop-app/yarn-error.log*
+
+# Editor directories and files
+desktop-app/.vscode/*
+!desktop-app/.vscode/extensions.json
+desktop-app/.idea
+desktop-app/.DS_Store
+
+# ====================
+# Docker
+# ====================
+*.pid
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# ====================
+# Secrets & Certificates
+# ====================
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+secret/
+secrets/
+.secrets/
+*.secret
+
+# ====================
+# IDE / Editor
+# ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ====================
+# OS generated files
+# ====================
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+*.dmp
+[Tt]humbs.db
+*.bak
+*.tmp
+*.temp
+
+# ====================
+# Project specific
+# ====================
+*.log
+logs/
+*.sql
+*.dump
+backup/
+*.backup
+*.old
+*.orig
+*.rej
+
+# Reports
+*.htmlcov/
+coverage/
+*.report
+test-reports/
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache
+.cache/
+.cache-loader/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# Build outputs
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+
+
+# ====================
+# Coverage files
+# ====================
+.coverage
+.coverage.*
+htmlcov/
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.tox/
+.nox/

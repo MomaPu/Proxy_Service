@@ -22,7 +22,7 @@
 ### 1. Склонируйте репозиторий
 
 ```
-git clone https://github.com/MomaPu/Proxy-Service.git
+git clone https://github.com/MomaPu/Proxy_Service.git
 cd proxy-service
 ```
 ## 2. Настройте переменные окружения

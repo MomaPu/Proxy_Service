@@ -12,6 +12,7 @@ venv.bak/
 .pytest_cache/
 .coverage
 htmlcov/
+test.db
 
 # Backend
 backend/.env

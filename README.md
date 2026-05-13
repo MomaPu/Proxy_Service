@@ -162,6 +162,10 @@ postgres:
 
 ![img_5.png](readme_img/img_5.png)
 
+### Тесты
+<img width="1799" height="377" alt="image" src="https://github.com/user-attachments/assets/6857c0af-bf03-45d4-b2c5-93490d1ab324" />
+
+
 # Контакты
 Telegram: @MomaPu
 
